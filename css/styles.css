@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  display: flex;
+  font-size: 15px;
+  background-color: #101010;
+  padding: 20px;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.logo a {
+  margin-right: 20px;
+  text-decoration: none;
+  color: yellow;
+}
+
+.menu-right a {
+  text-decoration: none;
+  color: yellow;
+}
+
+.menu-right {
+  display: flex;
+  margin-left: auto;
+  gap: 30px;
+  padding-right: 20px;
+}
+
+.caret {
+  display: none;
+  margin-left: 20p;
+}
+
+@media only screen and (max-width: 992px) {
+  .caret {
+    display: block;
+    margin-left: auto;
+  }
+  .menu-right {
+    display: none;
+  }
+  .open {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .logo a {
+    color: white;
+  }
+}
